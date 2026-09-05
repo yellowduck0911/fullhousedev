@@ -42,11 +42,11 @@ if ten !="" and khoang_cach >=0 and 0<=gio <=23 and (loai_xe == "4 cho" or loai_
         """
         )
         if khoang_cach < 5:
-            chuyen_ngan=print("loại chuyến đi:chuyến ngắn")
+            print("loại chuyến đi:chuyến ngắn")
         if 5 <= khoang_cach <= 15:
-            chuyen_trung_binh=print("loại chuyến đi:chuyến trung bình")
+            print("loại chuyến đi:chuyến trung bình")
         if khoang_cach > 15:
-            chuyen_dai=print("loại chuyến đi:chuyến dài")        
+            print("loại chuyến đi:chuyến dài")        
         if khoang_cach>15:
             print("Ưu tiên đièu xe:Ưu tiên tài xế nhiều kinh nghiệm")
         if khoang_cach<5:
