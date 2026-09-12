@@ -62,11 +62,18 @@ while True:
                 )
     if nhap==3:
             xoa_sv=int(input("nhập mã số sinh viên:"))
-            if xoa_sv==luu_mssv:
-                    xoa_sv=luu_mssv.remove(luu_mssv)
-                    print("xóa thành công!!!")
+            if xoa_sv in luu_mssv:
+                vi_tri=luu_mssv.index(xoa_sv)
+                luu_mssv.pop(vi_tri)
+                luu_ten.pop(vi_tri)
+                luu_tuoi.pop(vi_tri)
+                luu_toan.pop(vi_tri)
+                luu_ly.pop(vi_tri)
+                luu_hoa.pop(vi_tri)
+                tong.pop(vi_tri)
+                print("xóa thành công!!!")
             else:
-                print("mã sinh iên không hợp lệ!!!")
+                print("mã sinh viên không hợp lệ!!!")
     if nhap==4:
         print(
                                     f"{"mssv":<13}"
