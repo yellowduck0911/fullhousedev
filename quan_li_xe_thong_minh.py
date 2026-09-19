@@ -20,7 +20,7 @@ while True:
     print("-"*50)
     try:
         nhap=int(input("Nhập lựa chọn của bạn(1-5):"))
-        if 1>=nhap and nhap>=5:
+        if 1>nhap or nhap>5:
             print("xin hãy nhập 1 trong 5 lựa chọn")
     except:
         print("xin hãy nhập lựa chọn của bạn!!!")
